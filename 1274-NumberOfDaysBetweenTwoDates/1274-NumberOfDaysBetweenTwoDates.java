@@ -1,0 +1,12 @@
+// Last updated: 7/9/2026, 9:47:56 AM
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+class Solution {
+    public int daysBetweenDates(String date1, String date2) {
+        LocalDate d1 = LocalDate.parse(date1);
+        LocalDate d2 = LocalDate.parse(date2);
+        return (int) Math.abs(ChronoUnit.DAYS.between(d1, d2));
+    }
+}
+
+
